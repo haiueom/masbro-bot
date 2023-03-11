@@ -5,6 +5,7 @@ const path = require('node:path');
 const dotenv = require('dotenv');
 dotenv.config();
 const token = process.env.TOKEN;
+const keepAlive = require('./server');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -34,5 +35,5 @@ for (const file of eventFiles) {
 	}
 }
 
-// Log in to Discord with your client's token
+keepAlive();
 client.login(token);
