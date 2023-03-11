@@ -9,19 +9,6 @@ const gid = process.env.GUILD_ID;
 
 const commands = [];
 
-// get all js files from the commands subdirectory and add them to the commands array
-// const commandsPath = path.join(__dirname, 'commands');
-// // Grab all the command files from the commands subdirectory
-// fs.readdirSync(commandsPath).forEach((dir) => {
-// 	const commandFiles = fs.readdirSync(dir).filter((i) => i.endsWith('.js'));
-
-// 	// Grab the SlashCommandBuilder#toJSON() output of each command's data for deployment
-// 	for (const file of commandFiles) {
-// 		const command = require(`./commands/${dir}/${file}`);
-// 		commands.push(command.data.toJSON());
-// 	}
-// });
-
 const getAllFiles = function(dirPath, arrayOfFiles) {
 	const files = fs.readdirSync(dirPath);
 
@@ -44,7 +31,6 @@ for (const file of files) {
 	const command = require(file);
 	commands.push(command.data.toJSON());
 }
-console.log(commands);
 
 // Construct and prepare an instance of the REST module
 const rest = new REST({ version: '10' }).setToken(tkn);
