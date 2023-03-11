@@ -11,7 +11,7 @@ module.exports = {
 
 		if (!command) {
 			console.error(
-				`No command matching ${interaction.commandName} was found.`,
+				`[✕] No command matching ${interaction.commandName} was found.`,
 			);
 			return;
 		}
@@ -20,7 +20,7 @@ module.exports = {
 			await command.execute(interaction);
 		}
 		catch (error) {
-			console.error(`Error executing ${interaction.commandName}`);
+			console.error(`[✕] Error executing ${interaction.commandName}`);
 			console.error(error);
 		}
 	},
