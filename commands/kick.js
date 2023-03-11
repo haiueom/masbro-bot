@@ -5,7 +5,7 @@ module.exports = {
 		.setName('kick')
 		.setDescription('Select a member and kick them (but not really).')
 		.addUserOption((option) =>
-			option.setName('target').setDescription('The member to kick')
+			option.setName('target').setDescription('The member to kick'),
 		),
 	async execute(interaction) {
 		const member = interaction.options.getMember('target');

@@ -7,6 +7,10 @@
     "parserOptions": {
         "ecmaVersion": 2021
     },
+    "ignorePatterns": [
+        "node_modules/",
+        "*.json"
+    ],
     "rules": {
         "arrow-spacing": [
             "warn",
@@ -15,17 +19,17 @@
                 "after": true
             }
         ],
-        // "brace-style": [
-        //     "error",
-        //     "stroustrup",
-        //     {
-        //         "allowSingleLine": true
-        //     }
-        // ],
-        // "comma-dangle": [
-        //     "error",
-        //     "always-multiline"
-        // ],
+        "brace-style": [
+            "error",
+            "stroustrup",
+            {
+                "allowSingleLine": true
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
         "comma-spacing": "error",
         "comma-style": "error",
         "curly": [
@@ -88,10 +92,10 @@
             "always"
         ],
         "prefer-const": "error",
-        // "quotes": [
-        //     "error",
-        //     "single"
-        // ],
+        "quotes": [
+            "error",
+            "single"
+        ],
         "semi": [
             "error",
             "always"

@@ -4,8 +4,8 @@
 	"description": "Simple Discord bot made using discord.js",
 	"main": "index.js",
 	"scripts": {
-		"start": "node index.js",
-		"deploy": "node deploy-commands.js"
+		"deploy": "node deploy-commands.js && node index.js",
+		"lint": "eslint . --fix"
 	},
 	"keywords": [],
 	"author": "haiueom",

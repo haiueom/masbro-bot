@@ -7,7 +7,7 @@ module.exports = {
 		.addIntegerOption((option) =>
 			option
 				.setName('amount')
-				.setDescription('Number of messages to prune')
+				.setDescription('Number of messages to prune'),
 		),
 	async execute(interaction) {
 		const amount = interaction.options.getInteger('amount');
