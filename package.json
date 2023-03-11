@@ -1,0 +1,20 @@
+{
+	"name": "masbro-bot",
+	"version": "1.0.0",
+	"description": "Simple Discord bot made using discord.js",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"deploy": "node deploy-commands.js"
+	},
+	"keywords": [],
+	"author": "haiueom",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^14.7.1",
+		"dotenv": "^16.0.3"
+	},
+	"devDependencies": {
+		"eslint": "^8.35.0"
+	}
+}

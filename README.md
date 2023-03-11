@@ -1,2 +1,3 @@
 # masbro-bot
-Simple Discord bot made using discord,js
+
+Simple Discord bot made using discord.js
